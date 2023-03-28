@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            padding: 10px;
+            text-align: center;
+            background: white;
+            color: #36B87D;
+        }
+        .navber {
+            display: flex;
+            background-color: #36B87D;
+        }
+        .navber a {
+            color: #f2f2f2;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navber a:hover {
+            background-color: #BCE2C9;
+            color: white;
+        }
+        body {
+            font-family: arial;
+            padding: 10px;
+            background: #BCE2C9;
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .size {
+            flex-basis: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .newimg {
+            background-color: #BCE2C9;
+            width: 100%;
+            padding: 20px;
+        }
+        .main {
+            flex-basis: 70%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        footer {
+            padding: 10px;
+            text-align: center;
+            background: white;
+            margin-top: 10px;
+        }
+        @media screen and (max-width: 600px){
+            
+            .row,.navber{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is my first webpage</h1>
+        <p>Knowledge - Experience - FAQ</p>
+        <p>Using<b>flexible</b>Layout.</p>
+    </header>
+    <div class="navber">
+        <a href="#">Home</a>
+        <a href="#">Technology</a>
+        <a href="#">Science</a>
+        <a href="#">Life</a>
+    </div>
+    <div class="row">
+        <div class="size">
+            <h2>Introduce</h2>
+            <div class="newimg" style="height: 200px;">Image</div>
+            <p>Lorem ipsum dolor sit amit, comsectuter adipiscing elit</p>
+            <h3>Technology</h3>
+            <div class="newimg" style="height: 60px;">Image</div>
+            <div class="newimg" style="height: 60px;">Image</div>
+            <div class="newimg" style="height: 60px;">Image</div>
+            <h3>Follow me</h3>
+            <p>Facebook</p>
+            <p>Youtube</p>
+        </div>
+        <div class="main">
+            <h2>From CSS</h2>
+            <h5>lorem ipsum dolor sit amit.</h5>
+            <div class="newimg" style="height: 200px;">Image</div>
+            <p>Lorem ipsum dolor sit amit, consectuter adipisscing elit.</p>
+            <p>Lorem ipsum dolor sit amit, consectuter adipisscing elit. Praesent ullamcorper urna quis dui sollicitudin gravida. Duis vel mauris aliquet, facilisis diam sit amit, egestas nunc. Integer quis eleifend urna, non fringilla neque. </p><br>
+            <h2>Attribute Selector in CSS</h2>
+            <h5>lorem ipsum dolor sit amit.</h5>
+            <div class="newimg" style="height: 200px;">Image</div>
+            <p>Lorem ipsum dolor sit amit, consectuter adipisscing elit. Praesent ullamcorper urna quis dui sollicitudin gravida. Duis vel mauris aliquet</p>
+            <p>Lorem ipsum dolor sit amit, consectuter adipisscing elit. Praesent ullamcorper urna quis dui sollicitudin gravida. </p>
+        </div>
+    </div>
+    <footer>
+        <h4>&copy; Copyright by Author</h4>
+    </footer>
+</body>
+</html>
