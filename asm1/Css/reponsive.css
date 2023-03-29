@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media screen and (max-width: 1050px) {
     div > .input-group
     {
@@ -66,4 +67,74 @@
 }
 @media screen and (max-width: 450px) {
     
+=======
+@media screen and (max-width: 1050px) {
+    div > .input-group
+    {
+        display: none;
+    }
+    .gird-card {
+        
+        grid-template-columns: repeat(3,minmax(0,1fr));
+     
+    }
+}
+@media screen and (max-width: 990px) {
+    .d-gird {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  body > div > .display-container {
+        position: relative;
+        /* width: 100%; */
+        border: 2px solid white;
+        /* margin-top: 10px; */
+         height: auto; 
+     
+    }
+    .gird-card {
+        
+        grid-template-columns: repeat(2,minmax(0,1fr));
+     
+    }
+}
+@media screen and (max-width: 768px) {
+    .flex-footer:nth-child(2)
+    {
+        padding-bottom: 20px;
+    }
+    .d-gird {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .f-1 {
+        grid-column: auto;
+        padding-bottom: 20px;
+    }
+    .gird-card {
+        
+        grid-template-columns: repeat(2,minmax(0,1fr));
+     
+    }
+}
+@media screen and (max-width: 550px) {
+   .nav-bar {
+       display: block;
+    }
+    .side-menu {
+        display: none;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .gird-card {
+        
+        grid-template-columns: repeat(1,minmax(0,1fr));
+     
+    } 
+}
+@media screen and (max-width: 450px) {
+    
+>>>>>>> 365ef4cfdbf241c4265b6bcf8b8c6db315fb6858
 }
