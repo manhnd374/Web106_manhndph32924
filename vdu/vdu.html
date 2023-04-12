@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // $("p"); // Sử dụng tên thẻ html
+
+            // $("#a"); // Sử dụng ID mà mình đặt cho thẻ html đó
+
+            // $(".card-text"); // Sử dụng class mà mình đặt
+
+                $("button").click(function () {
+                    $("p").toggle("show");
+                });
+                $("#btn1").click(function(){
+                    $("#sample1").show();
+                    $("#sample2").hide();
+                });
+
+                $("#btn2").click(function(){
+                    $("#sample2").show();
+                    $("#sample1").hide();
+                });
+
+                // $("#btn3").click(function(){
+                //     $("#sample2").hide();
+                //     $("#sample1").hide();
+                // })
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="row justify-content-center mt-4">
+        <div class="card p-0" style="width: 18rem;">
+            <img src="./img/47445526892_781771f883_o.jpg" class="card-img-top w-100" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p id="sample1" class="card-text" style="text-align: center; color: red;">Lạ gì bỉ sắc tư phong,<br>
+                    Trời xanh quen thói má hồng đánh ghen.<br>
+                    Cảo thơm lần giở trước đèn,<br>
+                    Phong tình cổ lục còn truyền sử xanh.<br>
+                    </p>
+                <p id="sample2" class="card-text" style="text-align: center;">Đầu lòng hai ả tố nga,<br>
+                    Thúy Kiều là chị, em là Thúy Vân.<br>
+                    Mai cốt cách, tuyết tinh thần,<br>
+                    Mỗi người một vẻ, mười phân vẹn mười.<br>
+                    </p>
+                <div class="d-flex justify-content-between">
+                    <button id="btn1" href="#" class="btn btn-danger">Đoạn 1</button>
+                    <button id="btn2" href="#" class="btn btn-danger">Đoạn 2</button>
+                    <button id="btn3" href="#" class="btn btn-danger">Ẩn / Hiện</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+
+</html>

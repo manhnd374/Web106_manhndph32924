@@ -1,0 +1,44 @@
+.item {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item-2 {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* .container{
+    display: flex;
+} */
+.h3 {
+    text-align: center;
+    font-variant: small-caps;
+    color: #ffc107;
+}
+.p {
+    color: #ffc107;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.text{
+    color: white;
+}
+
+.img {
+   margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .img {
+        width: 40%;
+        height: auto;
+        margin: 20px;
+    }
+    
+    .item-2{
+        flex-direction: row;
+    }
+}
